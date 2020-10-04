@@ -10,7 +10,7 @@ function almostIncreasingSequence(sequence) {
 	while(limiter < 2){
 		for(i = 0; i < seq.length; i++){
 			if (seq[i+1] >= seq[i] && seq[i+2] <= seq[i+1] && seq[i] < seq.length && seq[i] < seq.length){
-				seq.splice(seq[i+2], 1);
+				seq.splice(seq[i+1], 1);
 				limiter += 1;
 				console.log(limiter);
 				console.log(seq);
