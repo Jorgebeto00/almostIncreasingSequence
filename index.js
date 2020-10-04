@@ -11,14 +11,14 @@ function almostIncreasingSequence(sequence) {
 			}else{
 				console.log('nelson');
 			}*/
-			console.log(seq.indexOf(seq[i]));
+			//console.log(seq.indexOf(seq[i]));
 			console.log(i);
-			//console.log(limiter);
-			//console.log(seq);
+			console.log(limiter);
+			console.log(seq);
 			
 			//console.log(seq.length);
 
-			/*if (limiter < 2 && seq[i] > seq[i+1] && seq.indexOf(seq[i]) < seq.length){
+			if (limiter < 2 && seq[i+1] < seq[i] && i < seq.length){
 				seq.splice(seq[i], 1);
 				limiter += 1;
 			}/*else if(limiter < 2 && seq[i] < seq[i+2] && seq.indexOf(seq[i+2]) <= seq.length && seq.indexOf(seq[i+2]) > 0){
@@ -37,8 +37,6 @@ function almostIncreasingSequence(sequence) {
 			
 		}
 		
-	
-	
 	return determine;
 }
 
